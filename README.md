@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏗️ Bihar Nirman Hub — बिहार निर्माण हब
 
 > Bihar's #1 Construction Material Marketplace — Find verified suppliers of Bricks, Cement, Sand, Gitti, Wood, Tiles, Iron & Paint across all 38 districts of Bihar.
@@ -175,3 +176,7 @@ Set environment variables on your hosting platform same as `.env`.
 ---
 
 *Built for Bihar 🙏 — Ghar banao aasani se!*
+=======
+# Bihar-Nirman-Website
+Bihar Nirman Hub — Bihar's #1 Construction Marketplace. Find verified suppliers of Bricks, Cement, Sand, Tiles &amp; more across all 38 districts. Built with React, Node.js &amp; MongoDB.
+>>>>>>> 96ec2f3e17c48fa53ba72754a50311f4fee073bb
