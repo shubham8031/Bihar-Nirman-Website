@@ -1,0 +1,17 @@
+.profile-layout { display: grid; grid-template-columns: 280px 1fr; gap: 24px; }
+.profile-card   { padding: 28px; text-align: center; }
+.profile-avatar {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: var(--primary); color: #fff;
+  font-size: 32px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+}
+.profile-card h3   { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.profile-meta      { margin-top: 16px; text-align: left; }
+.profile-meta div  { font-size: 13px; color: #636e72; padding: 6px 0; border-bottom: 1px solid var(--border); }
+.profile-sidebar   { height: fit-content; position: sticky; top: 80px; }
+@media (max-width: 768px) {
+  .profile-layout { grid-template-columns: 1fr; }
+  .profile-sidebar { position: static; }
+}

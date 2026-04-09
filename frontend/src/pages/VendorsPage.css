@@ -1,0 +1,20 @@
+.vendors-layout { display: grid; grid-template-columns: 260px 1fr; gap: 28px; }
+.filter-sidebar {
+  background: #fff; border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 20px; height: fit-content;
+  position: sticky; top: 80px;
+}
+.filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.filter-header h3 { font-size: 16px; font-weight: 700; }
+.clear-btn { font-size: 12px; color: var(--primary); background: none; border: none; cursor: pointer; }
+.results-header {
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+}
+.results-header h2 { font-size: 20px; font-weight: 700; }
+.results-count { font-size: 14px; color: #636e72; background: #f0f4ff; padding: 4px 12px; border-radius: 20px; }
+.pagination { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 32px; }
+
+@media (max-width: 900px) {
+  .vendors-layout { grid-template-columns: 1fr; }
+  .filter-sidebar { position: static; }
+}

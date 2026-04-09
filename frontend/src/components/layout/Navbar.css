@@ -1,0 +1,82 @@
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  position: sticky; top: 0; z-index: 1000;
+}
+.nav-inner {
+  display: flex; align-items: center;
+  justify-content: space-between; height: 65px; gap: 20px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  flex-shrink: 0;
+}
+.logo-icon { font-size: 28px; }
+.logo-main {
+  display: block; font-size: 17px; font-weight: 800;
+  color: var(--primary); line-height: 1.1;
+}
+.logo-sub { font-size: 11px; color: #636e72; }
+
+.nav-links {
+  display: flex; align-items: center; gap: 6px;
+  flex: 1; justify-content: center; flex-wrap: nowrap;
+}
+.nav-links a {
+  padding: 6px 10px; border-radius: 6px; font-size: 13px;
+  font-weight: 500; color: var(--secondary); white-space: nowrap;
+  transition: all 0.2s;
+}
+.nav-links a:hover, .nav-links a.active {
+  background: #fff3e0; color: var(--primary);
+}
+.nav-cat { font-size: 12px !important; }
+
+.nav-right { display: flex; align-items: center; gap: 10px; }
+
+.user-menu { position: relative; }
+.user-name {
+  cursor: pointer; font-size: 14px; font-weight: 600;
+  color: var(--secondary); padding: 6px 10px;
+  border-radius: 8px; border: 1.5px solid var(--border);
+}
+.user-menu:hover .dropdown { display: block; }
+.dropdown {
+  display: none; position: absolute; right: 0; top: 110%;
+  background: #fff; border-radius: 10px; min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  border: 1px solid var(--border); overflow: hidden; z-index: 100;
+}
+.dropdown a, .dropdown button {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; font-size: 14px; color: var(--secondary);
+  background: none; border: none; width: 100%; text-align: left;
+  transition: background 0.15s;
+}
+.dropdown a:hover, .dropdown button:hover { background: #f8f9fa; }
+
+.auth-btns { display: flex; gap: 8px; }
+
+.hamburger {
+  display: none; background: none; border: none;
+  color: var(--secondary); padding: 4px;
+}
+
+.mobile-menu {
+  display: none; flex-direction: column; gap: 4px;
+  padding: 12px 20px 16px; background: #fff;
+  border-top: 1px solid var(--border);
+}
+.mobile-menu a, .mob-logout {
+  padding: 11px 14px; border-radius: 8px; font-size: 14px;
+  color: var(--secondary); font-weight: 500; display: block;
+  background: none; border: none; text-align: left; width: 100%;
+}
+.mobile-menu a:hover, .mob-logout:hover { background: #f5f6fa; }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+  .mobile-menu { display: flex; }
+  .auth-btns { display: none; }
+}

@@ -1,0 +1,107 @@
+.vd-page { padding-top: 24px; }
+.breadcrumb { font-size: 13px; color: #636e72; margin-bottom: 16px; }
+.breadcrumb a { color: var(--primary); }
+.breadcrumb a:hover { text-decoration: underline; }
+
+.vd-header {
+  display: grid; grid-template-columns: auto 1fr auto;
+  gap: 24px; padding: 28px; margin-bottom: 24px; align-items: start;
+}
+.vd-logo-wrap { flex-shrink: 0; }
+.vd-logo {
+  width: 80px; height: 80px; border-radius: 16px; background: #fff3e0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 44px; border: 2px solid #ffe0b2;
+}
+.vd-title-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }
+.vd-title-row h1 { font-size: 24px; font-weight: 800; color: var(--secondary); }
+.vd-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.vd-type {
+  display: inline-block; background: #fff3e0; color: var(--primary);
+  padding: 3px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; margin-bottom: 10px;
+}
+.vd-rating-row { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #636e72; margin-bottom: 10px; }
+.vd-location { font-size: 14px; color: #636e72; margin-bottom: 10px; }
+.map-link { color: var(--primary); margin-left: 6px; }
+.vd-desc { font-size: 14px; color: #636e72; line-height: 1.6; margin-bottom: 12px; }
+.vd-quick-info { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.vd-quick-info span {
+  font-size: 13px; background: #f0f4ff; padding: 4px 12px; border-radius: 20px; color: var(--secondary);
+}
+.vd-payments { font-size: 13px; margin-top: 8px; }
+
+/* Contact Box */
+.vd-contact-box {
+  background: #f8f9fa; border-radius: 12px; padding: 18px;
+  min-width: 220px; border: 1.5px solid var(--border);
+}
+.vd-contact-box h4 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+.contact-row {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 8px; margin-bottom: 8px; font-size: 13px;
+}
+.manager-email { font-size: 12px; color: var(--primary); display: block; margin-top: 6px; }
+
+/* Tabs */
+.vd-tabs { display: flex; gap: 4px; margin-bottom: 24px; border-bottom: 2px solid var(--border); }
+.tab-btn {
+  padding: 12px 22px; font-size: 14px; font-weight: 600;
+  background: none; border: none; color: #636e72; border-bottom: 3px solid transparent;
+  margin-bottom: -2px; transition: all 0.2s;
+}
+.tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+.tab-btn:hover  { color: var(--primary); }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.about-item { display: flex; flex-direction: column; gap: 3px; }
+.about-key  { font-size: 11px; color: #b2bec3; text-transform: uppercase; letter-spacing: 0.5px; }
+.about-item > span, .about-item > a { font-size: 14px; font-weight: 500; color: var(--secondary); }
+.about-item a { color: var(--primary); }
+
+/* Reviews */
+.star-select { display: flex; gap: 6px; }
+.star-opt { font-size: 28px; cursor: pointer; color: #ddd; transition: color 0.1s; }
+.star-opt.filled { color: #f39c12; }
+
+/* Modal */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.55);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999; padding: 20px;
+}
+.modal-box {
+  background: #fff; border-radius: 16px; width: 100%;
+  max-width: 540px; max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.modal-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: #fff;
+}
+.modal-header h3 { font-size: 17px; font-weight: 700; }
+.modal-close { background: none; border: none; font-size: 20px; color: #636e72; cursor: pointer; }
+.modal-product-info {
+  display: flex; gap: 16px; padding: 12px 24px;
+  background: #fff3e0; font-size: 14px; font-weight: 600; color: var(--primary);
+}
+.modal-box form { padding: 20px 24px; }
+.modal-total {
+  background: #e8f5e9; border-radius: 8px; padding: 12px 14px;
+  font-size: 15px; margin-bottom: 14px; color: var(--accent);
+}
+.modal-total strong { font-size: 20px; }
+.modal-vendor-note {
+  background: #e0f2fe; border-radius: 8px; padding: 10px 14px;
+  font-size: 13px; color: #0369a1; margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .vd-header { grid-template-columns: auto 1fr; }
+  .vd-contact-box { grid-column: 1 / -1; }
+  .about-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .vd-header { grid-template-columns: 1fr; }
+  .vd-logo { width: 60px; height: 60px; font-size: 32px; }
+}

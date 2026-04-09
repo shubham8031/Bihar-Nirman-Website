@@ -1,0 +1,98 @@
+.home-page { padding-bottom: 0; }
+.section { padding: 56px 0; }
+
+/* Hero */
+.hero { position: relative; min-height: 520px; display: flex; align-items: center; overflow: hidden; }
+.hero-bg {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, #1a252f 0%, #2c3e50 50%, #e67e22 100%);
+  opacity: 0.95;
+}
+.hero-content { position: relative; z-index: 1; padding: 60px 0; max-width: 780px; }
+.hero-badge {
+  display: inline-block; background: rgba(255,255,255,0.15); color: #fff;
+  padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.3); margin-bottom: 18px;
+}
+.hero-content h1 {
+  font-size: 42px; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 16px;
+}
+.hero-content h1 span { color: #f39c12; font-size: 26px; display: block; margin-top: 8px; }
+.hero-content p { color: rgba(255,255,255,0.85); font-size: 16px; line-height: 1.7; margin-bottom: 28px; }
+
+.hero-search {
+  display: flex; gap: 10px; background: #fff;
+  padding: 8px; border-radius: 12px; margin-bottom: 28px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+.hero-search input  { flex: 2; border: none; font-size: 15px; padding: 10px 14px; }
+.hero-search select { flex: 1; border: none; font-size: 14px; min-width: 160px; }
+.hero-search button { flex-shrink: 0; border-radius: 8px; }
+
+.hero-stats { display: flex; gap: 28px; flex-wrap: wrap; }
+.stat { color: #fff; }
+.stat strong { display: block; font-size: 26px; font-weight: 800; color: #f39c12; }
+.stat span   { font-size: 13px; opacity: 0.8; }
+
+/* Categories */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 14px;
+}
+.cat-card {
+  background: #fff; border-radius: 12px; padding: 22px 14px;
+  text-align: center; cursor: pointer;
+  box-shadow: var(--shadow); border: 2px solid transparent;
+  transition: all 0.2s; display: flex; flex-direction: column; align-items: center; gap: 10px;
+}
+.cat-card:hover { border-color: var(--primary); transform: translateY(-3px); }
+.cat-icon { font-size: 36px; }
+.cat-name { font-size: 13px; font-weight: 600; color: var(--secondary); text-align: center; }
+
+/* How it works */
+.how-section { background: #f0f4ff; }
+.how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.how-card {
+  background: #fff; border-radius: 14px; padding: 28px 22px;
+  text-align: center; box-shadow: var(--shadow); position: relative;
+}
+.how-num {
+  width: 36px; height: 36px; background: var(--primary); color: #fff;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 800; margin: 0 auto 14px;
+}
+.how-icon { font-size: 40px; margin-bottom: 12px; }
+.how-card h3 { font-size: 18px; font-weight: 700; color: var(--secondary); margin-bottom: 8px; }
+.how-card p  { font-size: 14px; color: #636e72; line-height: 1.6; }
+
+/* Section head */
+.section-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+
+/* Districts */
+.district-section { background: #fafbfc; }
+.district-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.district-chip {
+  background: #fff; border: 1.5px solid var(--border);
+  border-radius: 24px; padding: 8px 18px; font-size: 14px;
+  font-weight: 500; color: var(--secondary); cursor: pointer;
+  transition: all 0.2s;
+}
+.district-chip:hover { border-color: var(--primary); color: var(--primary); background: #fff3e0; }
+
+/* CTA */
+.cta-section { background: linear-gradient(135deg, var(--secondary), #34495e); padding: 56px 0; }
+.cta-inner {
+  display: flex; justify-content: space-between; align-items: center; gap: 24px;
+}
+.cta-inner h2 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+.cta-inner p  { color: rgba(255,255,255,0.8); font-size: 15px; }
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 28px; }
+  .hero-content h1 span { font-size: 18px; }
+  .hero-search { flex-direction: column; }
+  .how-grid { grid-template-columns: 1fr; }
+  .cta-inner { flex-direction: column; text-align: center; }
+  .section-head { flex-direction: column; gap: 12px; }
+}

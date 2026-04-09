@@ -1,0 +1,13 @@
+{
+  "name": "bihar-nirman-hub",
+  "version": "1.0.0",
+  "description": "Bihar Nirman Hub - Construction Materials Marketplace",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "start": "cd backend && npm start"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

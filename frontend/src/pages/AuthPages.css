@@ -1,0 +1,38 @@
+.auth-page {
+  min-height: calc(100vh - 65px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f6fa 0%, #fff3e0 100%);
+}
+.auth-box {
+  width: 100%; max-width: 440px; padding: 36px 40px; text-align: center;
+}
+.auth-box-wide { max-width: 580px; text-align: left; }
+.auth-logo { font-size: 48px; margin-bottom: 10px; }
+.auth-box h2 { font-size: 24px; font-weight: 800; color: var(--secondary); margin-bottom: 6px; }
+.auth-sub    { font-size: 14px; color: #636e72; margin-bottom: 24px; }
+
+.auth-divider {
+  text-align: center; color: #b2bec3; font-size: 13px;
+  margin: 16px 0; position: relative;
+}
+.auth-divider::before, .auth-divider::after {
+  content: ''; position: absolute; top: 50%; width: 44%; height: 1px; background: var(--border);
+}
+.auth-divider::before { left: 0; }
+.auth-divider::after  { right: 0; }
+
+.auth-links { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 14px; }
+
+.role-toggle { display: flex; gap: 8px; margin-bottom: 20px; }
+.role-btn {
+  flex: 1; padding: 12px; border-radius: 10px; border: 2px solid var(--border);
+  font-size: 14px; font-weight: 600; background: #fff; color: var(--secondary);
+  cursor: pointer; transition: all 0.2s;
+}
+.role-btn.active { border-color: var(--primary); background: #fff3e0; color: var(--primary); }
+
+.demo-creds {
+  margin-top: 16px; background: #f8f9fa; border-radius: 8px;
+  padding: 12px 14px; font-size: 12px; color: #636e72; text-align: left; line-height: 1.7;
+}

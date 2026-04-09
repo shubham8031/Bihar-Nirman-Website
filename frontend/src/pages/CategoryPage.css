@@ -1,0 +1,21 @@
+.cat-banner {
+  border-radius: 14px; padding: 28px 32px; margin-bottom: 24px;
+}
+.cat-banner-text { display: flex; gap: 20px; align-items: flex-start; }
+.cat-banner-icon { font-size: 56px; flex-shrink: 0; }
+.cat-banner-text h1 { font-size: 26px; font-weight: 800; color: var(--secondary); margin-bottom: 8px; }
+.cat-banner-text p  { font-size: 14px; color: #636e72; line-height: 1.6; margin-bottom: 10px; }
+.cat-breadcrumb { font-size: 12px; color: #636e72; }
+.cat-breadcrumb a { color: var(--primary); }
+
+.cat-filters {
+  display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap;
+}
+.cat-filters input  { flex: 2; min-width: 200px; }
+.cat-filters select { flex: 1; min-width: 160px; }
+
+.results-meta {
+  font-size: 13px; color: #636e72;
+  background: #f0f4ff; padding: 8px 14px; border-radius: 8px;
+  margin-bottom: 20px; display: inline-block;
+}

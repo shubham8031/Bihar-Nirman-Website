@@ -1,0 +1,29 @@
+.admin-tabs { display: flex; gap: 6px; margin-bottom: 24px; flex-wrap: wrap; }
+.admin-tab {
+  padding: 10px 18px; border-radius: 8px; border: 1.5px solid var(--border);
+  font-size: 14px; font-weight: 500; background: #fff; color: #636e72; cursor: pointer;
+  transition: all 0.2s;
+}
+.admin-tab.active { background: var(--secondary); border-color: var(--secondary); color: #fff; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.stat-card { padding: 24px; text-align: center; }
+.stat-icon { font-size: 36px; margin-bottom: 8px; }
+.stat-val  { font-size: 36px; font-weight: 800; color: var(--primary); }
+.stat-lbl  { font-size: 13px; color: #636e72; margin-top: 4px; }
+
+.admin-table-wrap { overflow-x: auto; }
+.admin-table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+}
+.admin-table th {
+  background: #f8f9fa; padding: 12px 14px; text-align: left;
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;
+  color: #636e72; border-bottom: 2px solid var(--border);
+}
+.admin-table td {
+  padding: 12px 14px; border-bottom: 1px solid var(--border);
+  color: var(--secondary); vertical-align: middle;
+}
+.admin-table tr:hover td { background: #f8f9fa; }
+.admin-table small { color: #b2bec3; font-size: 12px; }
